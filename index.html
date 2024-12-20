@@ -7,23 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!--BACKGROUND CIRCLES START-->
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+    </div>
+    <!--BACKGROUND CIRCLES END-->
     
+    <!--OVERLAY START-->
+    <div class="overlay"></div>
+    <!--OVERLAY END-->
     <!--MAIN START-->
     <div class="main">
+        <!--HEADER START-->
+        <div class="header">
+            <div class="container">
+                <div class="row flex-end">
+                    <button type="button" class="nav-toggler">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <div class="nav-inner">
+                            <ul>
+                                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                                <li><a href="#about" class="nav-item link-item">About</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--HEADER END-->
         <!--HOME SECTION START-->
-        <section class="home-section align-items-center hidden">
+        <section class="home-section align-items-center active" id="home"> 
             <div class="container">
                 <div class="row align-items-center">
                     <div class="home-text">
                         <p>Hello! I'm</p>
                         <h1>Muskan Goyal</h1>
-                        <h2>MERN Stack Developer</h2>
-                        <a href="#" class="btn">more about me</a>
-                        <a href="#" class="btn">portfolio</a>
+                        <h2>Frontend Web Developer</h2>
+                        <a href="#about" class="btn link-item">more about me</a>
+                        <a href="#portfolio" class="btn link-item">portfolio</a>
                     </div>
                     <div class="home-img">
                         <div class="img-box">
-                            <img src="images/Profile-Pic.png" alt="profile-img">
+                            <img src="images/Profile_Photo_new.png" alt="profile-img">
                         </div>
                     </div>
                 </div>
@@ -31,7 +64,7 @@
         </section>
         <!--HOME SECTION END-->
         <!--ABOUT SECTION START-->
-        <section class="about-section sec-padding hidden">
+        <section class="about-section sec-padding" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -61,7 +94,7 @@
                         <button type="button" class="tab-item active" data-target="#education">education</button>
                         <button type="button" class="tab-item" data-target="#experience">experience</button>
                     </div>
-                    <!--EDUCATION SATART-->
+                    <!--EDUCATION START-->
                     <div class="tab-content active" id="education">
                         <div class="timeline">
                             <div class="timeline-item">
@@ -103,15 +136,15 @@
                         </div>
                     </div>
                     <!--EXPERIENCE END-->
-                    <a href="#" class="btn">Download CV</a>
-                    <a href="#" class="btn">Contact Me</a>
+                    <a href="CV_Muskan_Goyal_ECE.pdf" target="_blank" class="btn">Download CV</a>
+                    <a href="#contact" class="btn link-item">Contact Me</a>
                 </div>
                 </div>
             </div>
         </section>
         <!--ABOUT SECTION END-->
         <!--PORTFOLIO SECTION START-->
-        <section class="portfolio-section sec-padding hidden">
+        <section class="portfolio-section sec-padding" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -258,13 +291,14 @@
         <!--PORTFOLIO SECTION END-->
 
         <!--CONTACT SECTION START-->
-        <section class="contact-section sec-padding">
+        <section class="contact-section sec-padding" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
                         <h2>Contact Me</h2>
                     </div>
                 </div>
+                <div class="row">
                 <div class="contact-form">
                     <form>
                         <div class="row">
@@ -306,6 +340,7 @@
                             <a href="#" target="_blank"><i class="fab fa-dribble"></i></a>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
